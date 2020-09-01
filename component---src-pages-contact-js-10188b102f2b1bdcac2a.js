@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"Cuy+":function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),l=t.n(n),c=t("Bl7J"),i=t("hIod");a.default=function(){return l.a.createElement(c.a,null,l.a.createElement(i.a,{title:"Contact"}),l.a.createElement("h1",null,"Contact me"),l.a.createElement("p",null,"the best way to reach me is via email rifadayyan@gmail.com"))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-10188b102f2b1bdcac2a.js.map
