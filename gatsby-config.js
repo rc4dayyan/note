@@ -10,6 +10,7 @@ module.exports = {
     title: 'Dayyan Blog',
     author: 'Rifa Dayyan'
   },
+  pathPrefix: "/blog",
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
@@ -25,7 +26,15 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              staticFolderName: 'static',
+              include: ['featured'],
+              exclude: ['featured.skip'],
+            },
+          },
+          
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -36,6 +45,7 @@ module.exports = {
         ]
       }
     },
+    
     {
       resolve: `gatsby-source-contentful`,
       options: {
